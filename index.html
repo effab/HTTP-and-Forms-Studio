@@ -4,9 +4,15 @@
 	<meta charset="utf-8">
 	<script>
 		// TODO: create a handler
+		function setSearchEngine(){
+			console.log()
+		}
     window.addEventListener("load", function(){
-        // TODO: register the handler
-    });
+		let form = document.querySelector("form");
+		form.addEventListener("go", function(event) {
+			alert("go clicked");
+		});
+	});
 	</script>
 </head>
 
@@ -15,12 +21,11 @@
 	<form id="searchForm">
     <!-- TODO: add form elements -->
 		<input type="text" name="q"/>
-		Search Engine
-		<label>Google <input type="radio" name="engine" value="https://www.google.com/search"/></label>
-		<label>DuckDuckGo <input type="radio" name="engine" value="https://duckduckgo.com/"/></label>
-		<label>Bing <input type="radio" name="engine" value="https://www.bing.com/search"/></label>
-		<label>Ask <input type="radio" name="engine" value="https://www.ask.com/web"/></label>
-		<button>Go!cd ~</button>
+		<label><input type="radio" name="engine" value="https://www.google.com/search"/>Google</label>
+		<label><input type="radio" name="engine" value="https://duckduckgo.com/"/>DuckDuckGo</label>
+		<label><input type="radio" name="engine" value="https://www.bing.com/search"/>Bing</label>
+		<label><input type="radio" name="engine" value="https://www.ask.com/web"/>Ask</label>
+		<button>Go!</button>
 	</form>
 
 </body>
